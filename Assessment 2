@@ -1,0 +1,48 @@
+// Summative assessment 2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string name;
+	cout << "enter your full name: ";
+	cin >> name;
+	cout << name << endl << endl;
+
+	int n;
+	long double factorial = 1.0;
+		cout << "Enter a number: ";
+	cin >> n;
+
+	if (n < 0)
+		cout << "Syntax Error";
+	else {
+		for (int i = 1; i <= n; ++i) {
+			factorial *= i;
+		}
+		cout << n << "! is = " << factorial << endl << endl;
+
+
+	}
+	cout << "The multiplication for " << n << " is:" << endl;
+
+	for (int i = 1; i <= 10; ++i) {
+		cout << n << " * " << i << " = " << n * i << endl;
+		cout << endl;
+
+	}
+	cout << "The exponential table for " << n << "  is:"
+		<< endl << endl;
+	float result;
+	for (int i = 1; i <= 10; ++i) {
+		result = pow(n, i);
+		cout << n << " ^ " << i << " = " << result << endl;
+
+
+	 
+ 	}
+	return 0;
+}
+   
