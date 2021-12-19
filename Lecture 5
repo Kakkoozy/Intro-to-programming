@@ -1,0 +1,100 @@
+//lecture 5 exercises// 
+
+//biography// 
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string age,
+    address,
+    name;
+    
+    cout << "Name: \n";
+    cin >> name;
+    cout << "Age: \n";
+    cin >> age; 
+    cout << "Address: \n";
+    cin >> address; 
+    
+    cout <<"Hello " << name << endl;
+    cout << "You are " << age << " years old" << endl;
+    cout << "And you live in " << address;
+}
+
+
+// Temperature //
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    
+double x;
+double y;
+cout << "Enter the Temperature to be converted into Celcius: ";
+cin >> x;
+y = (x - 32) * 0.5556;
+cout << "It is now " << y << " degrees Celcius";
+}
+
+//temperature part 2//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+double x,y;
+cout << "Enter the value to be converted into Fahrenheit: ";
+cin >> x;
+y = (x *1.8) +32;
+cout << "It is now " << y << " degrees Fahrenheit";
+}
+
+
+//circles//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+double c,
+a,
+r;
+
+cout << "Enter the radius to calculate the circumference and the area of a circle" << endl;
+cin >> r;
+a = 3.14 * r * r;
+c = 2 * 3.14 * r;
+cout << "The area is: " << a << endl;
+cout << "The circumference is: " << c << endl;
+}
+
+// areas of rectangle triangle and square//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+double length, 
+width, 
+rect, 
+tri, 
+sq;
+cout << "\nLet's calculate the area of a rectangle, a triangle, and a square. \n";
+cout << "First, give me a value for length: ";
+cin >> length;
+cout << "\nNext, give me a value for the width: ";
+cin >> width;
+rect = length * width;
+tri = (length * width) * 0.5;
+sq= length*length;
+cout << "\nThe area of rectangle = " << rect;
+cout << "\nThe area of triangle =  " << tri;
+cout << "\nThe area of square =  "<< sq;
+}
+
