@@ -1,0 +1,179 @@
+// lecture 7//
+
+//theme park//
+
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Hello! Welcome to Enchanted kingdom's 'Space Shuttle'!" << endl;
+	cout << "To get in, I must first ask your height (cm) and age!" << endl;
+	cout << "Height: ";
+	int age, height;
+	cin >> height; 
+	cout << endl << "Next your age please." << endl;
+	cin >> age; 
+
+	if ((age >= 5) && (height > 60)) {
+		cout << "You are allowed to enter, enjoy!";
+	}
+	else {
+		cout << "Sorry! You are not allowed in this ride.";
+	}
+	return 0;
+}
+
+//France exercise//
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Tell me the capital of France. ";
+		string capital;
+		cin >> capital;
+		if (capital == "Paris" || capital == "paris" || capital == "PARIS") {
+			cout << "Correct!";
+		}
+		else {
+			cout << "Uh-oh! Wrong answer!";
+		}
+}
+
+//letter checker//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Hello! input a letter: ";
+	string letter;
+	cin >> letter; 
+	if (letter == "a" || "A" || "e"|| "E"|| "I" || "i" || "o" || "O" || "u" || "U") {
+		cout << "this is a vowel.";
+	}
+	else {
+		cout << "this is a consonant";
+	}
+}
+
+// Grade checker//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Please input the grade: " << endl;
+	int grade;
+	cin >> grade;
+	if (grade >= 70) {
+		cout << "A" << endl;
+	}
+	else if (grade >= 60 ||grade <= 69) {
+		cout << "B" << endl;
+	}
+	else if (grade >= 50 || grade <= 59) {
+		cout << "C" << endl;
+	}
+	else if (grade >= 40 || grade <= 49) {
+		cout << "D" << endl;
+	}
+	else {
+		cout << "F" << endl;
+	}
+}
+
+//band// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Hey man, I'm looking for a musician. Are you one? (reply with y/n)  ";
+	string answer;
+	string instrument;
+	cin >> answer;
+	if (answer == "y" || answer == "Y") {
+		cout << "Nice! what instrument do you play?" << endl << "Answer 'd' for drums, 'g' for guitar and 'o' for other instruments";
+		cin >> instrument;
+		if (instrument == "D" || instrument == "d" || instrument == "g" || instrument == "G") {
+			cout << "Exactly what I need! Wanna join my band?";
+		}
+		else {
+			cout << "Oh I'm looking for someone who plays guitar or drums, sorry.";
+		}
+	}
+	else {
+		cout << "Oh no biggie, can you introduce me to someone who is?";
+	}
+			return 0;
+}
+
+
+//killing time//
+
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Your friend is late, and they told you to wait for how many minutes? " << endl;
+	int time;
+	cin >> time;
+	if (time >= 15) {
+		cout << "Wow, that'll take a while." << endl << "By the way, do you have 5 dirhams on you by any chance? (y/n) ";
+		string answer;
+		cin >> answer;
+		if (answer == "y" || "Y") {
+			cout << "I suggest you go for a cup of coffee." << endl;
+		}
+		else {
+			cout << "Oh, well in that case a walk around would make waiting easier for you.";
+		}
+		}
+	else {
+		cout << "You should wait in the food court, they won't be that long anyway.";
+	}
+}
+
+// earthquake//
+
+#include <string>
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Enter a value appropriate for the Richter scale: ";
+		int num1;
+		cin >> num1;
+		if (num1 < 2.0) {
+			cout << "this is a micro earthquake.";
+		}
+		else if (num1 >= 2.0 && num1 < 3.0) {
+			cout << "this is a very minor earthquake.";
+		}
+		else if (num1 >= 3.0 && num1 < 4.0) {
+			cout << "this is a minor earthquake.";
+		}
+		else if (num1 >= 4.0 && num1 < 5.0) {
+			cout << "this is a light earthquake.";
+		}
+		else if (num1 >= 5.0 && num1 < 6.0) {
+			cout << "this is a moderate earthquake, caution advised.";
+		}
+		else if (num1 >= 6.0 && num1 < 7.0) {
+			cout << "this is a strong earthquake, caution advised.";
+		}
+		else if (num1 >= 7.0 && num1 < 8.0) {
+			cout << "this is a major earthquake, caution advised.";
+		}
+		else if (num1 >= 8.0 && num1 < 10.0) {
+			cout << "this is a great earthquake, caution advised.";
+		}
+		else {
+			cout << "this is a metoric earthquake, goodluck and Godspeed.";
+		}
+}
