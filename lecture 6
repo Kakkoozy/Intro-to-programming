@@ -1,0 +1,104 @@
+// lecture 6//
+// Goodmorning//
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int time = 3;
+    
+   
+    if (time <= 12)
+	{
+		cout << "Good Morning" << endl;
+	}
+	else if (time >= 12 && time < 18)
+	{
+		cout << "Good Afternoon" << endl;
+		}
+	else if (time >=18 && time < 21)
+	{
+		cout << "Good Evening" << endl;
+	}
+	else if (time >=21 && time <24)
+	{
+		cout << "Good Night" << endl; 
+	}
+	else
+	{
+		cout << "Incorrect input" << endl;
+	} 
+	if(time >= 12) {
+        cout << " It is now PM" << endl;
+    }
+    else {
+        cout << "it is now AM" << endl;
+    
+    }
+    return 0;
+}
+
+
+//Can I vote?// 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age = 16;
+    if (age >= 18){
+        cout << "Congratulations! You can vote" << endl;
+    }
+    else {
+        cout << "You're too young, wait a few more years to vote" << endl;
+    }
+}
+
+
+// odd or even ? //
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+    cout << "Give me a number and I'll tell you if it's odd or even!" << endl;
+    cin >> number;
+    if (number % 2 == 0) {
+        cout << "This number is even!";
+    }
+    else if( number % 2 != 0) {
+        cout << "Odd!";
+    }
+    else{ 
+        cout << "Hey this is incorrect!" << endl;
+    }
+    return 0;
+}
+
+
+
+// NUMBER CHECKER//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int number;
+    cout << "give me a number" << endl;
+    cin >> number;
+    
+    if (number >=1 ) {
+        cout << "This number is a positive number" << endl;
+    }
+    else if (number < 0) {
+        cout << "this number is negative" << endl;
+    }
+    else {
+        cout << "this is zero";
+    }
+    return 0;
+    
+}
