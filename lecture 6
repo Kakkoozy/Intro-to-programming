@@ -102,3 +102,68 @@ int main()
     return 0;
     
 }
+
+
+// profit or loss//
+#include <algorithm>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int purchase, sale;
+
+    cout << "Hello! Please input your purchase price" << endl;
+    cin >> purchase;
+    cout << "Next, please input your sale price" << endl;
+    cin >> sale;
+    int sum = sale - purchase;
+    if (sum > 0) {
+        cout << "You have made a profit of: " << sum << endl;
+    }
+    else if (sum == 0) {
+        cout << "You have made no profit nor loss, breakeven." << endl;
+    }
+    else {
+        cout << "You have made a loss of: " << sum << endl;
+    }
+    return 0;
+}
+
+// shapes by number of sides //
+#include <algorithm>
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Hello! Please input the number of sides you want your shape to have from 3 to 10: ";
+	int sides;
+	cin >> sides; 
+	if (sides == 3) {
+		cout << "Your shape is a triangle" << endl;
+	}
+	else if (sides == 4) {
+		cout << "Your shape is a square" << endl;
+	}
+	else if (sides == 5) {
+		cout << "Your shape is a pentagon" << endl;
+	}
+	else if (sides == 6) {
+		cout << "Your shape is a hexagon" << endl;
+	}
+	else if (sides == 7) {
+		cout << "Your shape is a heptagon" << endl;
+	}
+	else if (sides == 8) {
+		cout << "Your shape is a octagon" << endl;
+	}
+	else if (sides == 9) {
+		cout << "Your shape is a nonagon" << endl;
+	}
+	else if (sides == 5) {
+		cout << "Your shape is a decagon" << endl;
+	}
+	else {
+		cout << "incorrect input, please try again" << endl;
+	}
+	return 0;
+}
