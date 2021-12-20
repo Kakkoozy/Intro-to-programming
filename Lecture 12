@@ -1,0 +1,48 @@
+//Lecture 12//
+
+//Months loop //
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+int main()
+{
+    string months[12] = { "January", "February", "March","April","May","June","July","August","September","October","November","December" };
+    for (int x = 0; x < 12; x++)
+    {
+        cout << months[x] << endl;
+    }
+}
+
+
+// Marks loop//
+
+
+#include <array>
+#include <string>
+#include <algorithm>
+using namespace std;
+#include <iostream>
+
+int main()
+{
+    cout << "Hello! Please enter the grades(5) to be averaged.";
+    int marks[5];
+    int sum=0;
+    for (int x = 0; x < 5; x++)
+    {
+        cout << endl << "Input the subject marks" << endl;
+        cin >> marks[x];
+        while (cin.fail() || marks[x]>100 || marks[x]<0) {
+            cout << "invalid command" << endl;
+            cin.clear();
+            cin.ignore();
+            cin >> marks[x];
+        }
+
+          sum = sum + marks[x];
+        }
+    cout << endl << "Your average is: " << sum / 5<<endl;
+}
