@@ -1,0 +1,109 @@
+//Lecture 10 exercises//
+
+// descending 7 stars//
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 1; x <= 5; x++)
+	{ 
+		for (int y = 1; y <= x; y++)
+		{
+		cout << "*"; 
+		}
+		cout << endl; 
+	}
+
+
+}
+
+
+// rising stars 5 lines loop//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 1; x <= 5; x++)
+	{  
+	for (int y = 1; y <= x; y++)
+	{
+	cout << "*"; 
+	}
+	cout << endl; 
+	}
+
+
+}
+
+
+
+//rise and fall loop// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	for (int x = 1; x <= 5; x++)
+	{
+		for (int y = 1; y <= x; y++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
+	for (int x = 1; x <= 5; x++) {
+		for (int y = x; y <= 5; y++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+
+
+
+// Cube loop//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int num1;
+	cout << "Give me a number and I'll give you it's cube" << endl;
+	cin >> num1;
+	for (int x = 1; x <= num1; x++)
+	{
+		cout << endl << "The cube of number " << x << " is: ";
+		int y = x;
+		y = y * y * y;
+		cout << y;
+	}
+
+}
+
+
+//finding nines loop//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int sum = 0;
+
+	for (int x = 100; x <= 200; x++)
+	{
+	if (x % 9 == 0)
+		{
+	cout << endl << "A number divisible by 9 is " << x << endl;
+	sum = sum + x;
+	}
+	}
+	cout << endl << "The sum of all these numbers is " << sum << endl;
+}
