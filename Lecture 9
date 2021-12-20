@@ -1,0 +1,141 @@
+// lecture 9//
+
+// remain positive//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	double Mynum = 20;
+	while (Mynum > 0) {
+		Mynum = Mynum - 0.5;
+		cout << Mynum << endl;
+	}
+}
+
+
+
+//reverse 9 times //
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num = 108;
+	while (num > 0) {
+		num = num - 9;
+		cout << num << endl;
+	}
+	cin.get();
+	return 0;
+}
+
+
+// pointless box//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "enter a number! However, I only accept 1 and 2." << endl;
+	int num;
+	cin >> num;
+	while (num != 0 && num <= 2 && !cin.fail()) {
+		if (num == 1) {
+			cout << "Congratulations, you've made an input of 1." << endl;
+
+		}
+		else {
+			cout << "Wow! Number 2!" << endl;
+		}
+		cout << "Enter a number of either 1 or 2! take your pick." << endl; 
+		cin >> num;
+	}
+	cout << "I said enter a number that's either 1 or 2!";
+}
+
+// quit do while loop// 
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+char input; 
+do
+{
+	cout << "Would you like to Quit (Y/N)?" << endl;
+	cin >> input;
+} 
+while ((input != 'Y') && (input != 'y'));
+return 0;
+}
+
+
+
+// brute force 1//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	string password = "246";
+	string userInput;
+	while (userInput != password)
+	{
+		cout << "Please input the password" << endl;
+		cin >> userInput;
+
+	}
+	cout << "Access granted." << endl;
+
+}
+
+
+// brute force part 2//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	string password = "246";
+	string userInput;
+	int x = 5;
+	while (x > 0)
+	{
+		cout << "Please input the password." << endl;
+		cin >> userInput;
+		if (userInput == password)
+		{
+			cout << "Access granted." << endl;
+			break;
+		}
+		else
+			x--; 
+		cout << "Incorrect, please try again. you now have: " << x << " attempts remaining." << endl;
+	}
+	if (x == 0)
+	{
+		cout << "Access locked, security has been notified. Good luck." << endl;
+	}
+}
+
+// loopy//
+
+#include <iostream>  
+using namespace std;
+int main() {
+
+	int num = 0, count;
+	cout << "Hey there! Give me a number" << endl;
+	cin >> count;
+	do
+	{
+		cout << num << endl;
+		num++;
+
+	} while (num <= count);
+
+}
+
+
