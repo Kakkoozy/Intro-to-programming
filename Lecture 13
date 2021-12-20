@@ -1,0 +1,54 @@
+// lecture 13//
+
+// input and output array//
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    int courses[5];
+
+    for (int x = 0; x < 5; x++) {
+        cout << "Input the " << x + 1 << " number" << endl;
+        cin >> courses[x];
+        while (cin.fail()) {
+            cout << "invalid command, enter the number again\n";
+            cin.clear();
+            cin.ignore();
+            cin >> courses[x];
+        }
+    }
+    cout << "the numbers are: \n";
+    for (auto course : courses) 
+    {
+        cout << course << endl;
+    }
+}
+
+
+//array art//
+//this was kind of cool//
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	string snacks[5][5] = {
+	{"_","_","_","_","_"}, 
+	{"_", "O", "_", "O", "_"}, 
+	{"_", "@", "@", "@", "_"}, 
+	{"_", "^", "^", "^", "_"}, 
+	{"_", "V", "V", "V","_" } 
+	};
+
+	for (int x = 0; x < 5; x++)
+	{
+		cout << endl;
+		for (int y = 0; y < 5; y++)
+			cout << snacks[x][y];
+	}
+	cout << endl;
+}
