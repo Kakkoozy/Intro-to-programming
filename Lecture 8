@@ -116,3 +116,91 @@ int main() {
 	}
 	
 }
+
+
+
+	// temp switch//
+
+	#include <iostream>
+	#include <string>
+	using namespace std;
+	int main()
+	{
+		cout << "Hello and welcome to Mercury Drug! Please input the type of temperature that you need to convert. Fahrenheit and Celcius only! (f/c)" << endl;
+		char temp;
+		cin >> temp;
+		switch (temp) {
+		case 'f':
+		case 'F':
+			cout << "Fahrenheit into Celcius it is then, please input the the temperature:" << endl;
+			int num1;
+			cin >> num1;
+			cout << "Alright, converting " << num1 << " degrees Fahrenheit into Celcius";
+			int num2; 
+			num2 = (num1 - 32) * 0.5556;
+			cout << "Your temperature is now: " << num2 << " degrees Celcius";
+			break;
+		case 'c':
+		case 'C':
+			cout << "Please enter the value to be converted into Fahrenheit: " << endl;
+			int num3;
+			cin >> num3;
+			cout << "Converting, please wait." << endl; 
+				int num4;
+			num4 = (num3 * 1.8) + 32;
+			cout << num3 << " degrees celcius will now be: " << num4 << " degrees Fahrenheit.";
+			break;
+		default: 
+			cout << "error" << endl;
+
+		}
+		return 0;
+
+	}
+
+
+
+// switch grade// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	cout << "Please input your name" << endl;
+	string name;
+	getline(cin, name);
+	cout << "Hello " << name << ". Please input your grade." << endl;
+	int grade;
+	cin >> grade;
+	
+	if (grade > 100) {
+		cout << "error, please input a grade between 0-100";
+
+	}
+	else {
+		switch (grade / 10)
+		{
+		case 10:
+		case 9: 
+		case 8:
+			cout << name << ", you have a grade of A: Excellent!";
+			break;
+		case 7:
+			cout << name << ", you have a grade of B: Very good!";
+			break;
+		case 6:
+				cout << name << ", you have a grade of C: Fair.";
+				break;
+		case 5:
+			cout << name << ", you have a grade of D: Practice some more!";
+			break;
+		case 4:
+			cout << name << ", you have a grade of E: Needs a lot of practice.";
+			break;
+		default: 
+			cout << name << "You have failed, try again next time.";
+		}
+	}
+
+}
