@@ -1,0 +1,110 @@
+//Lecture 14//
+//count 6 thing// 
+//so many includes ;-;// 
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <exception>
+#include <array>
+#include <random>
+using namespace std;
+
+int main()
+{
+	int sum = 0;
+	
+	srand(7);
+	array<int, 1000> randomArry;
+	for (int x = 0; x < 1000; x++)
+	{
+		randomArry[x] = rand() % 50;
+		cout << randomArry[x] << ",";
+		if (randomArry[x] == 6)
+		sum++;
+	}
+	cout << "The number 6 has appeared exactly: " << sum << " times" << endl;
+}
+
+
+//largest number//
+//I don't really know the difference between \n and endl but it kinda looks like the same thing//
+
+#include <iostream>
+#include <array>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int y;
+    double x = 0, arr[10];
+    cout << "Enter total number of elements(1 to 10): \n";
+    for (y = 0; y < 10; y++)
+    {
+        cout << "Enter a Number " << y + 1 << " : ";
+        cin >> arr[y];
+
+        while (cin.fail())
+        {
+            cout << "Incorrect command. ";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> arr[y];
+        }
+    }
+
+    for (y = 0; y < 10; ++y)
+    {
+
+        if (x < arr[y])
+            x = arr[y];
+    }
+    cout << "Largest element = " << x;
+
+    return 0;
+}
+
+
+
+//smallest number//
+//ONE MORE LECTURE LEEEFT//
+
+
+#include <iostream>
+#include <array>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int z;
+    double x = 0, arr[10];
+    cout << "Enter total number of elements(1 to 10): \n";
+    for (z = 0; z < 10; ++z)
+    {
+        cout << "Enter Number " << z + 1 << " : ";
+        cin >> arr[z];
+
+        while (cin.fail())
+        {
+            cout << "Incorrect command";
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cin >> arr[z];
+        }
+    }
+
+    x = arr[0];
+    for (z = 0; z < 10; z++)
+    {
+
+        if (x > arr[z])
+            x = arr[z];
+    }
+    cout << "Smallest element = " << x;
+
+    return 0;
+}
