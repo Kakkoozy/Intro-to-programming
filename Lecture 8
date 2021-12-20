@@ -1,0 +1,118 @@
+//Lecture 8//
+// continue? //
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	cout << "Would you like to continue? (Y/N); ";
+	char answer;
+	cin >> answer; 
+	switch (answer) {
+	case 'y':
+	case 'Y':
+		cout << "Continuing!" << endl; 
+		break;
+	case 'n':
+	case 'N':
+		cout << "Game over!" << endl;
+		break; 
+	default: 
+		cout << "Incorrect input, proceeding to game over.";
+	}
+	cin.get();
+	return 0;
+}
+
+
+
+//days of the month// 
+
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+	int date;
+	cout << "Please input the numerical value of the month:" << endl;
+	cin >> date;
+	switch (date) {
+	case 1: 
+		cout << "January has 31 days" << endl;
+		break;
+	case 2:
+		cout << "February has 28 days" << endl;
+		break;
+	case 3:
+		cout << "March has 31 days" << endl;
+		break;
+	case 4:
+		cout << "April has 30 days" << endl;
+		break;
+	case 5:
+		cout << "May has 31 days" << endl;
+		break;
+	case 6:
+		cout << "June has 30 days" << endl;
+		break;
+	case 7:
+		cout << "July has 31 days" << endl;
+		break;
+	case 8:
+		cout << "August has 31 days" << endl;
+		break;
+	case 9:
+		cout << "September has 30 days" << endl;
+		break;
+	case 10:
+		cout << "October has 31 days" << endl;
+		break;
+	case 11:
+		cout << "November has 30 days" << endl;
+		break;
+	case 12:
+		cout << "December has 31 days" << endl;
+		break;
+	default: 
+		cout << "Incorrect input" << endl;
+		break;
+	}
+	return 0;
+}
+
+
+
+//Fuel me up//
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int num1;
+	cout << "Hello Mam/Sir welcome to Petron! how much gas do you need?" << endl;
+	cin >> num1;
+	if (num1 != 0) {
+		cout << num1 << " liters? Certainly, which gas do you use? ('p' for petrol, 'd' for diesel) " << endl;
+		char fuel;
+		cin >> fuel;
+		switch (fuel) {
+		case 'p':
+		case 'P':
+			cout << "You have selected " << num1 << " liters of Petrol, which costs 64.62 PHP per liter, making a total of: " << num1 * 64.62 << endl;
+			break;
+		case 'd':
+		case 'D':
+			cout << "You have selected " << num1 << " liters of Diesel, which costs 52.75 PHP per liter, making a total of: " << num1 * 52.75 << endl;
+			break;
+		default: 
+			cout << "Incorrect input.";
+		}
+	}
+	else {
+		cout << "Incorrect input, please try again" << endl;
+	}
+	
+}
