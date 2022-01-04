@@ -1,0 +1,66 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+void age(int num)
+{
+	if (num < 16 && num >30) {
+		cout << "Error, you're not allowed young." << endl;
+	}
+	else if (num >= 16 && num <= 30)
+	{
+		if (num >= 16 || num <= 21) {
+			char choice;
+			cout << "Do you want to go to the mall?" << endl;
+			cout << "Please input 'y' or 'n' to proceed." << endl;
+			cin >> choice;
+			switch (choice) {
+			case 'y':
+			case 'Y':
+				cout << "Alright, have fun!" << endl;
+				break;
+			case 'n':
+			case 'N':
+				cout << "Alright, cancelled." << endl;
+			}
+
+		}
+		else {
+			char choice;
+			cout << "Do you want to go to Hawaii?" << endl;
+			cout << "Please input 'y' or 'n' to proceed." << endl;
+			cin >> choice;
+			switch (choice) {
+			case 'y':
+			case 'Y':
+				cout << "Alright, have fun!" << endl;
+				break;
+			case 'n':
+			case 'N':
+				cout << "Alright, cancelled." << endl;
+			}
+
+		}
+	}
+	else {
+		cout << "Error, incorrect input" << endl;
+	}
+}
+
+	
+
+int main() {
+	string input;
+	int num;
+	
+			cout << "Please enter your full name:" << endl;
+			getline(cin, input);
+			cout << "Please input your age" << endl;
+			cin >> num;
+			age(num);
+			
+
+			return 0;
+		}
+
