@@ -1,0 +1,167 @@
+// ConsoleApplication6.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+
+void coffee() {
+	string Firstchoice;
+	int choice2;
+	int money;
+	while (Firstchoice != "c" || "C")
+	{
+		cout << "Coffee it is then, great! Which one would you want?" << endl;
+		cout << "Please input 0 for Ice coffee, 1 for Milk coffee, and 2 for Black Coffee." << endl;
+		cin >> choice2;
+		if (choice2 == 0) {
+			cout << "Ice coffee! Good choice! It will cost 3 dirhams, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 3) {
+				cout << "your change will be " << money - 3 << " dirhams, thank you very much!" << endl;
+				break;
+			}
+			else if (money == 3) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+
+			}
+		}
+		else if (choice2 == 1) {
+
+			cout << "Milk coffee! Good choice! It will cost 2 dirhams, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 2) {
+				cout << "your change will be " << money - 2 << " dirhams, thank you very much!" << endl;
+				break;
+			}
+			else if (money == 2) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+			}
+		}
+		else if (choice2 == 2) {
+			cout << "Black coffee! Interesting choice! It will cost 1 dirham, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 1) {
+				cout << "your change will be " << money - 1 << " dirhams, thank you very much!" << endl;
+			}
+			else if (money == 1) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+			}
+		}
+	}
+}
+
+void tea() {
+	string Firstchoice;
+	int choice2;
+	int money;
+	while (Firstchoice != "t" || "T")
+	{
+		cout << "Tea? Wonderful! Choose your tea of choice." << endl;
+		cout << "Please input 0 for Ice tea, 1 for Milk tea, and 2 for Black tea." << endl;
+		cin >> choice2;
+		if (choice2 == 0) {
+			cout << "Ice tea! Good choice! It will cost 3 dirhams, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 3) {
+				cout << "your change will be " << money - 3 << " dirhams, thank you very much!" << endl;
+				break;
+			}
+			else if (money == 3) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+
+			}
+		}
+		else if (choice2 == 1) {
+
+			cout << "Milk tea! Good choice! It will cost 2 dirhams, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 2) {
+				cout << "your change will be " << money - 2 << " dirhams, thank you very much!" << endl;
+				break;
+			}
+			else if (money == 2) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+			}
+		}
+		else if (choice2 == 2) {
+			cout << "Black tea! Interesting choice! It will cost 1 dirham, how much money do you have?" << endl;
+			cin >> money;
+			if (money > 1) {
+				cout << "your change will be " << money - 1 << " dirhams, thank you very much!" << endl;
+				break;
+			}
+			else if (money == 1) {
+				cout << "thank you for providing exact amount! See you again." << endl;
+				break;
+			}
+			else {
+				cout << "Error, insufficient amount. Transaction cancelled." << endl;
+				break;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+	string something;
+
+	cout << "COFFEE      PRICE(AED)      TEA        PRICE (AED)" << endl;
+	cout << "Ice coffee     3           Ice tea          3   " << endl;
+	cout << "Milk coffee    2           Milk tea         2   " << endl;
+	cout << "Black coffee   1           Black tea        1   " << endl;
+
+	cout << "Would you like Coffee(c) or tea (t)" << endl;
+	cin >> something;
+	if (something == "c" && "C") {
+		coffee();
+	}
+	else if  (something == "t" && "T") {
+		tea();
+	}
+	else {
+		cout << "error, please try again later." << endl;
+	}
+
+	return 0;
+}
